@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>l.png</file>
+    <file>tr.png</file>
+    <file>6081504.jpg</file>
+    <file>1.jpeg</file>
+    <file>2.JPG</file>
+    <file>3.JPG</file>
+    <file>4.JPG</file>
+    <file>5.JPG</file>
+    <file>st.png</file>
+    <file>6.JPG</file>
+    <file>7.JPG</file>
+    <file>8.JPG</file>
+    <file>9.JPG</file>
+  </qresource>
+</RCC>

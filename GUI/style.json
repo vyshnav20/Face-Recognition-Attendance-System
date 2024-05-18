@@ -1,0 +1,77 @@
+{
+    "ShowLogs": true,
+    "QMainWindow": [
+        {
+            "tittle": "Face Recognition Attendance System"
+        }
+    ],
+    "QSettings": [
+        {
+            "ThemeSettings": [
+                {
+                    "CustomTheme": []
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "Face Recognition Attendance System",
+                "ApplicationName": "Face Recognition Attendance System Company",
+                "OrginizationDormain": "Face Recognition Attendance System.org"
+            }
+        }
+    ],
+    "QPushButtonGroup": [{
+		"Buttons": [
+			"Register_Student",
+			"Class_Details",
+			"Attd_verify_Uptd",
+			"home_btn",
+			"Help",
+            "Settings"
+		],
+		"Style":[{
+			"Active": "background-color: #1b1b27; border-left: 3px solid rgb(255, 0, 0); font-weight: bold",
+			"NotActive": "background-color: #1b1b27;border: none;"
+		}]
+	}],
+    "QStackedWidget":[
+		{
+			"name":"main_pages",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":1000,
+							"easingCurve": "OutBack"
+						}
+					],
+					"slide":[
+						{
+							"active":true,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "OutBack"
+						}
+					]
+				}
+			],
+			"navigation":[
+				{
+					
+					"navigationButtons":[
+						{
+							"home_btn": "Home",
+                            "Register_Student": "Register_Student_Page",
+                            "Class_Details": "Class_Details_Page",
+                            "Help": "Help_page",
+							"Settings": "Setting_page",
+							"Attd_verify_Uptd": "Attd_Verify_Uptd_page"
+						}
+					]
+				}
+			]
+	
+		}
+	]
+    
+}

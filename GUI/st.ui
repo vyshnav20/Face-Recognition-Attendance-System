@@ -1,0 +1,3711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2234</width>
+    <height>1006</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>50</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+border:none;
+background-color:transparent;
+background: transparent;
+padding: 0;
+margin: 0;
+color: #fff;
+}
+#centralwidget{
+	border-image: url(:/newPrefix/3.JPG);
+}
+#a,#b,#a_2,#b_2,#widget_7,#widget_9,#widget_10,#widget_11,#widget_13,#widget_18,#widget_19,#widget_24,#widget_25{
+background-color: rgba(0,0,0,150);
+}
+
+
+
+QLabel{
+color:rgb(255,255,255);
+}
+#label_2{
+color:rgb(0,0,0)
+}
+QPushButton{
+text-align:left;
+padding:5px 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius:10px;
+background-color: #1b1b27;
+}
+#home_btn{
+border-left: 3px solid rgb(255, 0, 0);
+font-weight: bold
+}
+QLineEdit,QComboBox{
+border: 2px solid rgb(255, 255, 255);
+border-radius: 20px;
+color: rgb(255,255,255);
+padding-left:20px;
+padding-right:20px;
+backgrounnd-color: rgb(34,36,44);
+}
+QComboBox:hover{
+border:2px solid rgb(97, 97, 97);}
+QLineEdit:hover{
+border:2px solid rgb(97, 97, 97);}
+QLineEdit:focus{
+border: 2px solid rgb(97, 97, 97);
+background-color:rgb(43,45,56);
+}
+
+#logout,#la,#ra,#Update_ph,#Update_pass{
+text-align:center;
+background-color: rgb(255, 255, 255);
+border-radius:25px;
+color: rgb(0,0,0);
+}
+#Update_ph:hover{
+text-align:center;
+background-color: rgb(97, 97, 97);
+border-radius:25px;
+color: rgb(255,255,255);
+}
+#Update_pass:hover{
+text-align:center;
+background-color: rgb(97, 97, 97);
+border-radius:25px;
+color: rgb(255,255,255);
+}
+#logout:hover{
+text-align:center;
+background-color: rgb(97, 97, 97);
+border-radius:25px;
+color: rgb(255,255,255);
+}
+#la:hover{
+text-align:center;
+background-color: rgb(97, 97, 97);
+border-radius:25px;
+color: rgb(255,255,255);
+}
+#ra:hover{
+text-align:center;
+background-color: rgb(97, 97, 97);
+border-radius:25px;
+color: rgb(255,255,255);
+}
+#T_name,#T_Ph,#T_ID,#Cls_ID,#Th,#Ah,#Ph,#P,#Sub1,#Sub2,#Sub3,#Sub4,#Sub5,#Sub1_2,#Sub2_5,#Sub3_2,#Sub4_2,#Sub5_2,#Tp_,#Sub1m,#Sub2m,#Sub3m,#Sub4m,#Sub5m{
+border:3px solid rgb(255,255, 255);
+border-radius:25px;
+background-color: rgba(0,0,0,150);}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="Title" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QFrame" name="frame_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>BlackChancery</family>
+           <pointsize>45</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Face Recognition Attendance System</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="logout">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>white allies</family>
+           <pointsize>19</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Logout</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>l.png</normaloff>l.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>36</width>
+           <height>36</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="Body" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QCustomSlideMenu" name="left_menu" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <property name="spacing">
+                 <number>10</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="home_btn">
+                  <property name="font">
+                   <font>
+                    <family>Maiandra GD</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Home</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Updt_Details">
+                  <property name="font">
+                   <font>
+                    <family>Maiandra GD</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Update Student Details</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Attd_verify_Uptd">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Maiandra GD</family>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Attendance Verification </string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Academics">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Academics</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_2">
+               <property name="minimumSize">
+                <size>
+                 <width>180</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="Help">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Maiandra GD</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Help</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Settings">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Maiandra GD</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Settings</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_14" native="true">
+         <widget class="QWidget" name="content" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1940</width>
+            <height>889</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QCustomStackedWidget" name="main_pages">
+             <property name="font">
+              <font>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="Home">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <widget class="QWidget" name="widget_3" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>2031</width>
+                 <height>1501</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>1000</width>
+                 <height>1500</height>
+                </size>
+               </property>
+               <widget class="QWidget" name="widget_4" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>1831</width>
+                  <height>100</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>1000</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <property name="spacing">
+                  <number>9</number>
+                 </property>
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetMinAndMaxSize</enum>
+                 </property>
+                 <property name="leftMargin">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QWidget" name="T_name" native="true">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>500</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>300</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <widget class="QLabel" name="Tname">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>17</y>
+                      <width>481</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Student Name: ABCDEFGHI</string>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="T_ID" native="true">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <widget class="QLabel" name="Tid">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>17</y>
+                      <width>281</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Student ID: 7</string>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="Cls_ID" native="true">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>225</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>225</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <widget class="QLabel" name="Cid">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>17</y>
+                      <width>351</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Class ID: lmn</string>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="T_Ph" native="true">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>375</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>300</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <widget class="QLabel" name="TPh">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>17</y>
+                      <width>361</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string> Phone Number: 0123456789</string>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="widget_6" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>100</y>
+                  <width>1721</width>
+                  <height>800</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>500</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="a_2" native="true">
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <widget class="QCalendarWidget" name="calendar">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>501</width>
+                      <height>351</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>-1</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0,0,0,150);
+selection-background-color: rgb(255,255,255);
+alternate-background-color: rgb(83, 83, 83);
+selection-color: rgb(0,0,0);
+font-size:15px;
+width:100px;
+icon-size:35px,35px;</string>
+                    </property>
+                    <property name="firstDayOfWeek">
+                     <enum>Qt::Sunday</enum>
+                    </property>
+                    <property name="gridVisible">
+                     <bool>false</bool>
+                    </property>
+                    <property name="horizontalHeaderFormat">
+                     <enum>QCalendarWidget::ShortDayNames</enum>
+                    </property>
+                    <property name="verticalHeaderFormat">
+                     <enum>QCalendarWidget::NoVerticalHeader</enum>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QWidget" name="b_2" native="true">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>350</height>
+                    </size>
+                   </property>
+                   <widget class="QLabel" name="Tname_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>450</x>
+                      <y>20</y>
+                      <width>361</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>31</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Attendance Details</string>
+                    </property>
+                   </widget>
+                   <widget class="QWidget" name="Th" native="true">
+                    <property name="geometry">
+                     <rect>
+                      <x>220</x>
+                      <y>160</y>
+                      <width>140</width>
+                      <height>88</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <widget class="QLabel" name="Th_">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>20</y>
+                       <width>131</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>22</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>00</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </widget>
+                   <widget class="QLabel" name="Tname_5">
+                    <property name="geometry">
+                     <rect>
+                      <x>210</x>
+                      <y>100</y>
+                      <width>201</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>22</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Total Hours</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="Tname_6">
+                    <property name="geometry">
+                     <rect>
+                      <x>420</x>
+                      <y>100</y>
+                      <width>201</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>22</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Present Hours</string>
+                    </property>
+                   </widget>
+                   <widget class="QWidget" name="Ph" native="true">
+                    <property name="geometry">
+                     <rect>
+                      <x>440</x>
+                      <y>160</y>
+                      <width>140</width>
+                      <height>88</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <widget class="QLabel" name="Ph_">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>20</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>22</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>00</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </widget>
+                   <widget class="QLabel" name="Tname_7">
+                    <property name="geometry">
+                     <rect>
+                      <x>630</x>
+                      <y>100</y>
+                      <width>201</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>22</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Absent Hours</string>
+                    </property>
+                   </widget>
+                   <widget class="QWidget" name="Ah" native="true">
+                    <property name="geometry">
+                     <rect>
+                      <x>650</x>
+                      <y>160</y>
+                      <width>140</width>
+                      <height>88</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <widget class="QLabel" name="Ah_">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>20</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>22</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>00</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </widget>
+                   <widget class="QLabel" name="Tname_8">
+                    <property name="geometry">
+                     <rect>
+                      <x>840</x>
+                      <y>100</y>
+                      <width>201</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Maiandra GD</family>
+                      <pointsize>22</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Percrntage</string>
+                    </property>
+                   </widget>
+                   <widget class="QWidget" name="P" native="true">
+                    <property name="geometry">
+                     <rect>
+                      <x>840</x>
+                      <y>160</y>
+                      <width>140</width>
+                      <height>88</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <widget class="QLabel" name="P_">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>20</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>22</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>00</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QWidget" name="d_2" native="true">
+                   <widget class="QWidget" name="widget_7" native="true">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>821</width>
+                      <height>421</height>
+                     </rect>
+                    </property>
+                    <widget class="QLabel" name="subattd">
+                     <property name="geometry">
+                      <rect>
+                       <x>230</x>
+                       <y>0</y>
+                       <width>441</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>28</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subject-wise Attendance</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="Subj1_6">
+                     <property name="geometry">
+                      <rect>
+                       <x>40</x>
+                       <y>60</y>
+                       <width>371</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 1</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="Sub1" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>160</x>
+                       <y>110</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s1">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>0</y>
+                        <width>131</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QLabel" name="Subj2">
+                     <property name="geometry">
+                      <rect>
+                       <x>410</x>
+                       <y>60</y>
+                       <width>411</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 2</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="Subj4">
+                     <property name="geometry">
+                      <rect>
+                       <x>410</x>
+                       <y>190</y>
+                       <width>411</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 4</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="Subj3">
+                     <property name="geometry">
+                      <rect>
+                       <x>40</x>
+                       <y>190</y>
+                       <width>371</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 3</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="Sub2" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>540</x>
+                       <y>110</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s2">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="Sub3" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>160</x>
+                       <y>240</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s3">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="Sub4" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>540</x>
+                       <y>240</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s4">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QLabel" name="Subj5">
+                     <property name="geometry">
+                      <rect>
+                       <x>240</x>
+                       <y>300</y>
+                       <width>371</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 5</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="Sub5" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>360</x>
+                       <y>350</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s5">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                   </widget>
+                   <widget class="QWidget" name="widget_9" native="true">
+                    <property name="geometry">
+                     <rect>
+                      <x>830</x>
+                      <y>0</y>
+                      <width>871</width>
+                      <height>421</height>
+                     </rect>
+                    </property>
+                    <widget class="QLabel" name="Tname_4">
+                     <property name="geometry">
+                      <rect>
+                       <x>170</x>
+                       <y>10</y>
+                       <width>461</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>28</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Attendance on 0000/00/00</string>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="Sub1_2" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>130</x>
+                       <y>120</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s1_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>0</y>
+                        <width>131</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QLabel" name="Subj3_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>200</y>
+                       <width>371</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 3</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="Subj5_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>210</x>
+                       <y>310</y>
+                       <width>371</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 5</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="Sub5_2" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>330</x>
+                       <y>360</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s5_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QLabel" name="Subj2_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>380</x>
+                       <y>70</y>
+                       <width>411</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 2</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="Sub3_2" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>130</x>
+                       <y>250</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s3_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="Sub2_5" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>510</x>
+                       <y>120</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s2_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QLabel" name="Subj1_5">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>70</y>
+                       <width>371</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 1</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="Subj4_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>380</x>
+                       <y>200</y>
+                       <width>411</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Maiandra GD</family>
+                       <pointsize>18</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Subj: 4</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="Sub4_2" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>510</x>
+                       <y>250</y>
+                       <width>141</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <widget class="QLabel" name="s4_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>141</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Maiandra GD</family>
+                        <pointsize>22</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </widget>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="Updt_Details_Page">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <widget class="QWidget" name="b" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>370</x>
+                 <y>470</y>
+                 <width>803</width>
+                 <height>413</height>
+                </rect>
+               </property>
+               <widget class="QLabel" name="label_17">
+                <property name="geometry">
+                 <rect>
+                  <x>270</x>
+                  <y>260</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>19</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Password Updated</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>270</x>
+                  <y>20</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>27</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Update Password</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="Update_pass">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>340</y>
+                  <width>231</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>500</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>white allies</family>
+                  <pointsize>22</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Update Password</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="pass2">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>110</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="inputMethodHints">
+                 <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+                </property>
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+                <property name="placeholderText">
+                 <string>Password</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_16">
+                <property name="geometry">
+                 <rect>
+                  <x>32</x>
+                  <y>180</y>
+                  <width>225</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>225</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>18</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>New Password</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="New_pass">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>180</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>New Password</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_19">
+                <property name="geometry">
+                 <rect>
+                  <x>32</x>
+                  <y>110</y>
+                  <width>225</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>225</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>25</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Password:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="a" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>370</x>
+                 <y>0</y>
+                 <width>803</width>
+                 <height>413</height>
+                </rect>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>803</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <widget class="QPushButton" name="Update_ph">
+                <property name="geometry">
+                 <rect>
+                  <x>250</x>
+                  <y>340</y>
+                  <width>300</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>500</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>white allies</family>
+                  <pointsize>22</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Update Phone Number</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_15">
+                <property name="geometry">
+                 <rect>
+                  <x>250</x>
+                  <y>260</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>19</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Phone Number Updated</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="New_phno">
+                <property name="geometry">
+                 <rect>
+                  <x>300</x>
+                  <y>190</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>New Phone Number</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_12">
+                <property name="geometry">
+                 <rect>
+                  <x>72</x>
+                  <y>120</y>
+                  <width>225</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>225</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>25</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Password:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="pass1">
+                <property name="geometry">
+                 <rect>
+                  <x>300</x>
+                  <y>120</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="inputMethodHints">
+                 <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+                </property>
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+                <property name="placeholderText">
+                 <string>Password</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                 <rect>
+                  <x>230</x>
+                  <y>20</y>
+                  <width>462</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>27</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Update Phone Number</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                 <rect>
+                  <x>72</x>
+                  <y>190</y>
+                  <width>225</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>225</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>18</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>New Phone Number</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="Attd_Verify_Uptd_page">
+              <widget class="QWidget" name="widget_8" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>-1</x>
+                 <y>-1</y>
+                 <width>1961</width>
+                 <height>861</height>
+                </rect>
+               </property>
+               <widget class="QWidget" name="widget_10" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>1951</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <widget class="QLabel" name="Attd_verify">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>20</y>
+                   <width>1581</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>34</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Attendance Verification</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="widget_11" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>90</y>
+                  <width>1921</width>
+                  <height>651</height>
+                 </rect>
+                </property>
+                <widget class="QWidget" name="widget_12" native="true">
+                 <property name="geometry">
+                  <rect>
+                   <x>360</x>
+                   <y>90</y>
+                   <width>951</width>
+                   <height>551</height>
+                  </rect>
+                 </property>
+                 <widget class="QLabel" name="pic">
+                  <property name="geometry">
+                   <rect>
+                    <x>70</x>
+                    <y>0</y>
+                    <width>951</width>
+                    <height>551</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QLabel" name="Cls_Visuals">
+                 <property name="geometry">
+                  <rect>
+                   <x>670</x>
+                   <y>30</y>
+                   <width>221</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Class Visuals :-</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="filename">
+                 <property name="geometry">
+                  <rect>
+                   <x>900</x>
+                   <y>30</y>
+                   <width>221</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>File_name</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="widget_13" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>750</y>
+                  <width>1921</width>
+                  <height>175</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>981</width>
+                  <height>175</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <italic>false</italic>
+                 </font>
+                </property>
+                <widget class="QPushButton" name="ra">
+                 <property name="geometry">
+                  <rect>
+                   <x>1010</x>
+                   <y>30</y>
+                   <width>150</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>white allies</family>
+                   <pointsize>25</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Next -&gt;</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="pic_cnt">
+                 <property name="geometry">
+                  <rect>
+                   <x>890</x>
+                   <y>50</y>
+                   <width>321</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>19</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>1/3</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="la">
+                 <property name="geometry">
+                  <rect>
+                   <x>670</x>
+                   <y>30</y>
+                   <width>150</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>white allies</family>
+                   <pointsize>25</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>&lt;- Prev</string>
+                 </property>
+                </widget>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="Academics_page">
+              <widget class="QWidget" name="widget_24" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>-10</x>
+                 <y>-10</y>
+                 <width>1951</width>
+                 <height>80</height>
+                </rect>
+               </property>
+               <widget class="QLabel" name="Acdm">
+                <property name="geometry">
+                 <rect>
+                  <x>60</x>
+                  <y>20</y>
+                  <width>1581</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Academics</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="widget_25" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>-10</x>
+                 <y>80</y>
+                 <width>1951</width>
+                 <height>801</height>
+                </rect>
+               </property>
+               <widget class="QLabel" name="Acdm_2">
+                <property name="geometry">
+                 <rect>
+                  <x>560</x>
+                  <y>10</y>
+                  <width>201</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Semester:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="sem">
+                <property name="geometry">
+                 <rect>
+                  <x>750</x>
+                  <y>10</y>
+                  <width>311</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Subj1_m">
+                <property name="geometry">
+                 <rect>
+                  <x>140</x>
+                  <y>150</y>
+                  <width>621</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Subj: 1</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Subj2_m">
+                <property name="geometry">
+                 <rect>
+                  <x>820</x>
+                  <y>150</y>
+                  <width>711</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Subj: 2</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QWidget" name="Sub1m" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>350</x>
+                  <y>210</y>
+                  <width>201</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <widget class="QLabel" name="s1_m">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>10</y>
+                   <width>131</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="Sub2m" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>1070</x>
+                  <y>210</y>
+                  <width>201</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <widget class="QLabel" name="s2_m">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>10</y>
+                   <width>131</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="Sub3m" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>350</x>
+                  <y>390</y>
+                  <width>201</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <widget class="QLabel" name="s3_m">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>10</y>
+                   <width>131</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QLabel" name="Subj4_m">
+                <property name="geometry">
+                 <rect>
+                  <x>820</x>
+                  <y>330</y>
+                  <width>711</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Subj: 4</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Subj3_m">
+                <property name="geometry">
+                 <rect>
+                  <x>140</x>
+                  <y>330</y>
+                  <width>621</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Subj: 3</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QWidget" name="Sub4m" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>1070</x>
+                  <y>390</y>
+                  <width>201</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <widget class="QLabel" name="s4_m">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>10</y>
+                   <width>131</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QLabel" name="Subj5_m">
+                <property name="geometry">
+                 <rect>
+                  <x>450</x>
+                  <y>490</y>
+                  <width>711</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Subj: 5</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QWidget" name="Sub5m" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>700</x>
+                  <y>550</y>
+                  <width>201</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <widget class="QLabel" name="s5_m">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>10</y>
+                   <width>131</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QLabel" name="Tp">
+                <property name="geometry">
+                 <rect>
+                  <x>560</x>
+                  <y>710</y>
+                  <width>351</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Maiandra GD</family>
+                  <pointsize>34</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Total Percentage:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QWidget" name="Tp_" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>700</y>
+                  <width>201</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <widget class="QLabel" name="percent">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>10</y>
+                   <width>131</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>00</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="Help_page">
+              <widget class="QWidget" name="widget_17" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1931</width>
+                 <height>871</height>
+                </rect>
+               </property>
+               <widget class="QWidget" name="widget_19" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>250</x>
+                  <y>180</y>
+                  <width>1111</width>
+                  <height>471</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+text-align:left;
+padding:5px 10px;
+border-radius:50px;
+background-color:rgb(255,255, 255);
+color: rgb(0,0,0);
+}
+QPushButton:hover{
+
+text-align:left;
+background-color: rgb(97, 97, 97);
+border-radius:50px;
+color: rgb(255,255,255);
+}</string>
+                </property>
+                <widget class="QLabel" name="label_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>460</x>
+                   <y>10</y>
+                   <width>311</width>
+                   <height>61</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>36</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Contact Us</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_29">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>90</y>
+                   <width>251</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>225</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Alby Saji Luka</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_30">
+                 <property name="geometry">
+                  <rect>
+                   <x>460</x>
+                   <y>90</y>
+                   <width>251</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>225</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Harisankar S.G.</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_31">
+                 <property name="geometry">
+                  <rect>
+                   <x>850</x>
+                   <y>90</y>
+                   <width>251</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>225</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Vyshnav M.</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>140</y>
+                   <width>251</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>15</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>+91 7736094476</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>call.png</normaloff>call.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>45</width>
+                   <height>49</height>
+                  </size>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>260</y>
+                   <width>251</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>albyluka02@gmail.com</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>m.png</normaloff>m.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>42</width>
+                   <height>48</height>
+                  </size>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>460</x>
+                   <y>260</y>
+                   <width>251</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>harisankar4785@gmail.com</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>m.png</normaloff>m.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>42</width>
+                   <height>48</height>
+                  </size>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>850</x>
+                   <y>260</y>
+                   <width>251</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>vyshnavmohan20@gmail.com</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>m.png</normaloff>m.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>42</width>
+                   <height>48</height>
+                  </size>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>460</x>
+                   <y>140</y>
+                   <width>251</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>15</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>+91 6238574428</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>call.png</normaloff>call.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>45</width>
+                   <height>49</height>
+                  </size>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>850</x>
+                   <y>140</y>
+                   <width>251</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>15</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>+91 7907745936</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>call.png</normaloff>call.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>45</width>
+                   <height>49</height>
+                  </size>
+                 </property>
+                </widget>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="Setting_page">
+              <widget class="QWidget" name="widget_16" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>10</y>
+                 <width>1931</width>
+                 <height>871</height>
+                </rect>
+               </property>
+               <widget class="QWidget" name="widget_18" native="true">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>190</y>
+                  <width>1111</width>
+                  <height>471</height>
+                 </rect>
+                </property>
+                <widget class="QLabel" name="label">
+                 <property name="geometry">
+                  <rect>
+                   <x>520</x>
+                   <y>10</y>
+                   <width>311</width>
+                   <height>61</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>36</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Settings</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_21">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>130</y>
+                   <width>225</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>225</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Language:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="sub_menu_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>130</y>
+                   <width>311</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>20</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="sub_menu_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>200</y>
+                   <width>311</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>20</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_27">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>200</y>
+                   <width>225</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>225</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Theme:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="sub_menu_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>270</y>
+                   <width>311</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>20</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_28">
+                 <property name="geometry">
+                  <rect>
+                   <x>244</x>
+                   <y>270</y>
+                   <width>281</width>
+                   <height>50</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>225</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Maiandra GD</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Background Image:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </widget>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomSlideMenu</class>
+   <extends>QWidget</extends>
+   <header location="global">Custom_Widgets.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">Custom_Widgets.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="i.qrc"/>
+ </resources>
+ <connections/>
+</ui>
